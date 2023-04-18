@@ -24,7 +24,7 @@ const Skills = () => {
 
               <div>
                 <h1 className="skills__title">Frontend</h1>
-                <span className="skills__subtitle">3 months+</span>
+                <span className="skills__subtitle">6 months+</span>
               </div>
 
               <i className="skills__arrow">
@@ -35,7 +35,7 @@ const Skills = () => {
               <div className="skills__data">
                 <div className="skills__titles">
                   <h3 className="skills__name">HTML</h3>
-                  <span className="skills_number">90%</span>
+                  <span className="skills_number">70%</span>
                 </div>
                 <div className="skills__bar">
                   <span className="skills__percentage skills__html"></span>
@@ -45,7 +45,7 @@ const Skills = () => {
               <div className="skills__data">
                 <div className="skills__titles">
                   <h3 className="skills__name">CSS</h3>
-                  <span className="skills_number">90%</span>
+                  <span className="skills_number">70%</span>
                 </div>
                 <div className="skills__bar">
                   <span className="skills__percentage skills__css"></span>
@@ -55,7 +55,7 @@ const Skills = () => {
               <div className="skills__data">
                 <div className="skills__titles">
                   <h3 className="skills__name">ReactJS Library</h3>
-                  <span className="skills_number">90%</span>
+                  <span className="skills_number">70%</span>
                 </div>
                 <div className="skills__bar">
                   <span className="skills__percentage skills__react"></span>
@@ -75,7 +75,7 @@ const Skills = () => {
 
               <div>
                 <h1 className="skills__title">Backend</h1>
-                <span className="skills__subtitle">3 months+</span>
+                <span className="skills__subtitle">6 months+</span>
               </div>
 
               <i className="skills__arrow">
@@ -89,7 +89,7 @@ const Skills = () => {
               <div className="skills__data">
                 <div className="skills__titles">
                   <h3 className="skills__name">NodeJS, ExpressJS</h3>
-                  <span className="skills_number">90%</span>
+                  <span className="skills_number">70%</span>
                 </div>
                 <div className="skills__bar">
                   <span className="skills__percentage skills__expressjs"></span>
@@ -108,22 +108,19 @@ const Skills = () => {
               </i>
 
               <div>
-                <h1 className="skills__title">Databases</h1>
-                <span className="skills__subtitle">3 months+</span>
+                <h1 className="skills__title">Database</h1>
+                <span className="skills__subtitle">6 months+</span>
               </div>
 
               <i className="skills__arrow">
                 <UilAngleDown />
               </i>
             </div>
-            <div
-              className="skills__list
- grid"
-            >
+            <div className="skills__list grid">
               <div className="skills__data">
                 <div className="skills__titles">
                   <h3 className="skills__name">MySQL</h3>
-                  <span className="skills_number">90%</span>
+                  <span className="skills_number">70%</span>
                 </div>
                 <div className="skills__bar">
                   <span className="skills__percentage skills__mysql"></span>
@@ -133,7 +130,17 @@ const Skills = () => {
               <div className="skills__data">
                 <div className="skills__titles">
                   <h3 className="skills__name">PostgreSQL</h3>
-                  <span className="skills_number">90%</span>
+                  <span className="skills_number">70%</span>
+                </div>
+                <div className="skills__bar">
+                  <span className="skills__percentage skills__postgresql"></span>
+                </div>
+              </div>
+
+              <div className="skills__data">
+                <div className="skills__titles">
+                  <h3 className="skills__name">MongoDB</h3>
+                  <span className="skills_number">70%</span>
                 </div>
                 <div className="skills__bar">
                   <span className="skills__percentage skills__postgresql"></span>

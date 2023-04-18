@@ -12,12 +12,12 @@ const About = () => {
         <img src={aboutImage} alt="" className="about__img" />
         <div className="about__data">
           <p className="about__description">
-            Internship, with extensive knowledge and years of experience, working in web technologies , delivering
-            quality work.
+            As a Front-end intern with experience in ReactJS, I'm excited to bring my skills and passion for web
+            development to your team.
           </p>
           <div className="about__info">
             <div className="">
-              <span className="about__info-title">03+</span>
+              <span className="about__info-title">06+</span>
               <span className="about__info-name">
                 Months
                 <br />
@@ -25,7 +25,7 @@ const About = () => {
               </span>
             </div>
             <div className="">
-              <span className="about__info-title">03+</span>
+              <span className="about__info-title">06+</span>
               <span className="about__info-name">
                 Months
                 <br />
@@ -33,7 +33,7 @@ const About = () => {
               </span>
             </div>
             <div className="">
-              <span className="about__info-title">03+</span>
+              <span className="about__info-title">06+</span>
               <span className="about__info-name">
                 Months
                 <br />

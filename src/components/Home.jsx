@@ -44,11 +44,9 @@ const Home = () => {
           </div>
 
           <div className="home__data">
-            <h1 className="home__title">Hi, I'm LocNguyen</h1>
+            <h1 className="home__title">Hi, I'm Loc Nguyen</h1>
             <h3 className="home__subtitle">Frontend Developer</h3>
-            <div className="home__description">
-              High Level experience in web design and knowledge, producing quality goods
-            </div>
+            <div className="home__description">Have a good mindset, study hard, and work under pressure</div>
             <a href="#contact" className="button button--flex">
               Contact Me
               <i className="button__icon">
@@ -56,18 +54,6 @@ const Home = () => {
               </i>
             </a>
           </div>
-
-          {/* <div className="home__scroll">
-            <a href="#about" className="home__scroll-button button--flex flex">
-              <i className="home__scroll-mouse">
-                <UilMouseAlt />
-              </i>
-              <span className="home__scroll-name">Scroll Down</span>
-              <i className="home__scroll-arrow">
-                <UilArrowDown />
-              </i>
-            </a>
-          </div> */}
         </div>
       </div>
     </section>

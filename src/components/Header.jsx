@@ -11,22 +11,23 @@ import {
   UilMoon,
   UilSun,
 } from "@iconscout/react-unicons";
+import ThemeContext from "../context/Context";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
   // light theme
-  const [theme, setTheme] = useState(false);
+  const { theme, setTheme } = React.useContext(ThemeContext);
 
   const handleAddDarkTheme = () => {
     document.body.classList.add("dark-theme");
-    const swiperEle = document.querySelectorAll(".swiper-slide");
-    swiperEle.forEach((ele) => ele.classList.add("dark-theme"));
+    const swiperEle = document.querySelectorAll(".swiper-slide-active");
+    swiperEle[0].classList.add("dark-theme");
   };
 
   const handleRemoveDarkTheme = () => {
     document.body.classList.remove("dark-theme");
-    const swiperEle = document.querySelectorAll(".swiper-slide");
-    swiperEle.forEach((ele) => ele.classList.remove("dark-theme"));
+    const swiperEle = document.querySelectorAll(".swiper-slide-active");
+    swiperEle[0].classList.remove("dark-theme");
   };
 
   useEffect(() => {
@@ -38,54 +39,72 @@ const Header = () => {
     }
   }, [theme]);
 
-  useEffect(() => {
-    const swiperBtnPrev = document.getElementsByClassName("swiper-button-prev");
-    const swiperBtnNext = document.getElementsByClassName("swiper-button-next");
-    swiperBtnPrev[0].addEventListener("click", handleAddDarkTheme);
-    swiperBtnNext[0].addEventListener("click", handleAddDarkTheme);
-  });
+  // useEffect(() => {
+  //   const swiperBtnPrev = document.getElementsByClassName("swiper-button-prev");
+  //   const swiperBtnNext = document.getElementsByClassName("swiper-button-next");
+  //   swiperBtnPrev[0].addEventListener("click", handleAddDarkTheme);
+  //   swiperBtnNext[0].addEventListener("click", handleAddDarkTheme);
+  // });
 
   return (
     <header className="header" id="header">
       <nav className="nav container">
         <a href="#" className="nav__logo">
-          LocNguyen
+          Loc Nguyen
         </a>
         <div className={menu ? "nav__menu show-menu" : "nav__menu"} id="nav-menu">
           <ul className="nav__list grid">
             <li className="nav__item">
-              <a href="" className="nav__link">
-                <UilEstate /> <span>Home</span>
+              <a href="#home" className="nav__link">
+                <i className="nav__icon">
+                  <UilEstate />
+                </i>
+                <span className="nav__text">Home</span>
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="" className="nav__link">
-                <UilUser /> <span>About</span>
+              <a href="#about" className="nav__link">
+                <i className="nav__icon">
+                  <UilUser />
+                </i>
+                <span className="nav__text">About me</span>
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="" className="nav__link">
-                <UilFile /> <span>Skills</span>
+              <a href="#skills" className="nav__link">
+                <i className="nav__icon">
+                  <UilFile />
+                </i>
+                <span className="nav__text">Skills</span>
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="" className="nav__link">
-                <UilBriefcase className="nav__icon" /> <span>Project</span>
+              <a href="#qualification" className="nav__link">
+                <i className="nav__icon">
+                  <UilBriefcase className="nav__icon" />
+                </i>
+                <span className="nav__text">Qualification</span>
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="" className="nav__link">
-                <UilScenery /> <span>Portfolio</span>
+              <a href="#portfolio" className="nav__link">
+                <i className="nav__icon">
+                  <UilScenery />
+                </i>
+                <span className="nav__text">Portfolio</span>
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="" className="nav__link">
-                <UilMessage /> <span>Contact me</span>
+              <a href="#contact" className="nav__link">
+                <i className="nav__icon">
+                  <UilMessage />
+                </i>
+                <span className="nav__text">Contact me</span>
               </a>
             </li>
 

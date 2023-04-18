@@ -5,11 +5,11 @@ const Qualification = () => {
   const [choose, setChoose] = useState("education");
 
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="qualification">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personal journey</span>
 
-      <div className="qualification__container container">
+      <div className="qualification__container ">
         <div className="qualification__tabs">
           <div
             className={
@@ -36,11 +36,11 @@ const Qualification = () => {
             <i className="qualification__icon">
               <UilBriefcaseAlt />
             </i>
-            Work
+            Project
           </div>
         </div>
         <div className="qualification__sections">
-          {/* -----------------------------------------------Qualification Content 1 */}
+          {/* -------------------Qualification Content 1----------------------------*/}
           <div
             className={
               choose === "education"
@@ -51,14 +51,14 @@ const Qualification = () => {
           >
             {/* -----------------------------------------------Qualification1  */}
             <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">CNTT VietNhat </h3>
-                <span className="qualification__subtitle">Hust - University</span>
+              <div style={{ textAlign: "center" }}>
+                <h3 className="qualification__title">CÔNG NGHỆ THÔNG TIN VIỆT – NHẬT (HEDSPI)</h3>
+                <span className="qualification__subtitle">SOICT - HUST</span>
                 <div className="qualification__calendar">
                   <i className="button__icon" style={{ marginRight: "6px" }}>
                     <UilCalendarAlt />
                   </i>
-                  2019-2024
+                  2019 - 2024
                 </div>
               </div>
 
@@ -75,19 +75,19 @@ const Qualification = () => {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
-                <h3 className="qualification__title">React</h3>
-                <span className="qualification__subtitle">Youtube - FreeCodeCamp</span>
+              <div style={{ textAlign: "center" }}>
+                <h3 className="qualification__title">ReactJS Course</h3>
+                <span className="qualification__subtitle">Youtube</span>
                 <div className="qualification__calendar">
                   <i className="button__icon" style={{ marginRight: "6px" }}>
                     <UilCalendarAlt />
                   </i>
-                  2022-now
+                  2022 - now
                 </div>
               </div>
             </div>
           </div>
-          {/* -----------------------------------------------Qualification Content 2 */}
+          {/* -------------------Qualification Content 2 ---------------------------*/}
           <div
             className={
               choose === "work"
@@ -96,22 +96,40 @@ const Qualification = () => {
             }
             id="work"
           >
-            {/* -----------------------------------------------Qualification1  */}
+            {/* ------------------Qualification Right 1--------------------   */}
             <div className="qualification__data">
-              <div>
+              <div style={{ textAlign: "center" }}>
                 <h3 className="qualification__title">Website THOL.com.vn Clone</h3>
                 <span className="qualification__subtitle">100% join</span>
                 <div className="qualification__calendar">
                   <i className="button__icon" style={{ marginRight: "6px" }}>
                     <UilCalendarAlt />
                   </i>
-                  11/2022-1/2023
+                  11/2022 - 1/2023
                 </div>
               </div>
 
               <div style={{ position: "relative" }}>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
+              </div>
+            </div>
+            {/* ------------------Qualification Left 1--------------------   */}
+            <div className="qualification__data">
+              <div></div>
+              <div style={{ position: "relative" }}>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div style={{ textAlign: "center" }}>
+                <h3 className="qualification__title">Web Blog TypeScript</h3>
+                <span className="qualification__subtitle">100% join</span>
+                <div className="qualification__calendar">
+                  <i className="button__icon" style={{ marginRight: "6px" }}>
+                    <UilCalendarAlt />
+                  </i>
+                  1/2023 - 4/2023
+                </div>
               </div>
             </div>
           </div>
