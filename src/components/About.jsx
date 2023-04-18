@@ -16,28 +16,19 @@ const About = () => {
             development to your team.
           </p>
           <div className="about__info">
-            <div className="">
-              <span className="about__info-title">06+</span>
+            <div>
+              <span className="about__info-title">03+</span>
               <span className="about__info-name">
                 Months
                 <br />
-                experience
+                Experience
               </span>
             </div>
-            <div className="">
-              <span className="about__info-title">06+</span>
+            <div>
+              <span className="about__info-title">02+</span>
               <span className="about__info-name">
-                Months
-                <br />
-                experience
-              </span>
-            </div>
-            <div className="">
-              <span className="about__info-title">06+</span>
-              <span className="about__info-name">
-                Months
-                <br />
-                experience
+                Projects <br />
+                Myself
               </span>
             </div>
           </div>
