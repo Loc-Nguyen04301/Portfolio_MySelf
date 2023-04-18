@@ -27,7 +27,9 @@ const Portfolio = () => {
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             onSlideChange={() => {
               const swiperEle = document.querySelectorAll(".swiper-slide");
-              swiperEle.forEach((ele) => ele.classList.add("dark-theme"));
+              swiperEle.forEach((ele) => {
+                ele.classList.add("dark-theme");
+              });
             }}
           >
             <SwiperSlide>

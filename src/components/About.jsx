@@ -1,7 +1,7 @@
 import React from "react";
 import aboutImage from "../assets/img/about.png";
 import { UilFileDownload } from "@iconscout/react-unicons";
-import myCV from "../assets/img/mycv.pdf";
+import myCV from "../assets/img/NguyenGiaLoc_Internship_ReactJS.pdf";
 
 const About = () => {
   return (

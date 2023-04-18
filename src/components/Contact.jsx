@@ -1,7 +1,10 @@
 import React from "react";
-import { UilPhone, UilEnvelope, UilMapMarker, UilMessage } from "@iconscout/react-unicons";
+import { UilEnvelope, UilMapMarker, UilMessage, UilFacebook } from "@iconscout/react-unicons";
 
 const Contact = () => {
+  const handleClick = () => {
+    alert("Thank you (^-^)");
+  };
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Contact me </h2>
@@ -10,12 +13,16 @@ const Contact = () => {
         <div>
           <div className="contact__information">
             <i className="contact__icon">
-              <UilPhone />
+              <UilFacebook />
             </i>
 
             <div>
-              <h3 className="contact__title">Call me</h3>
-              <span className="contact__subtitle">0915-677-049</span>
+              <h3 className="contact__title">Facebook</h3>
+              <span className="contact__subtitle">
+                <a href="https://www.facebook.com/profile.php?id=100009072109785" className="contact__subtitle">
+                  link here
+                </a>
+              </span>
             </div>
           </div>
 
@@ -66,12 +73,12 @@ const Contact = () => {
           </div>
 
           <div>
-            <a href="#" className="button button--flex">
+            <button className="button button--flex button-send" onClick={handleClick}>
               Send Message
               <i className="button__icon">
                 <UilMessage />
               </i>
-            </a>
+            </button>
           </div>
         </div>
       </form>

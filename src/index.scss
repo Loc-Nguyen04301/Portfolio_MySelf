@@ -403,6 +403,12 @@ img {
   color: var(--first-color);
 }
 
+.button-send {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  border: none;
+}
+
 /*==================== ABOUT ====================*/
 .about__img {
   width: 200px;
@@ -549,7 +555,7 @@ img {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   cursor: pointer;
-  width: 40%;
+  width: 50%;
   justify-content: center;
 }
 
@@ -806,6 +812,10 @@ img {
   .about__container,
   .portfolio__content {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__description {
+    text-align: left;
   }
 
   .qualification {

@@ -20,14 +20,14 @@ const Header = () => {
 
   const handleAddDarkTheme = () => {
     document.body.classList.add("dark-theme");
-    const swiperEle = document.querySelectorAll(".swiper-slide-active");
-    swiperEle[0].classList.add("dark-theme");
+    const swiperElms = document.querySelectorAll(".swiper-slide-active");
+    swiperElms[0].classList.add("dark-theme");
   };
 
   const handleRemoveDarkTheme = () => {
     document.body.classList.remove("dark-theme");
-    const swiperEle = document.querySelectorAll(".swiper-slide-active");
-    swiperEle[0].classList.remove("dark-theme");
+    const swiperElms = document.querySelectorAll(".swiper-slide-active");
+    swiperElms[0].classList.remove("dark-theme");
   };
 
   useEffect(() => {
@@ -37,14 +37,10 @@ const Header = () => {
     } else {
       handleRemoveDarkTheme();
     }
+    return () => {
+      handleRemoveDarkTheme();
+    };
   }, [theme]);
-
-  // useEffect(() => {
-  //   const swiperBtnPrev = document.getElementsByClassName("swiper-button-prev");
-  //   const swiperBtnNext = document.getElementsByClassName("swiper-button-next");
-  //   swiperBtnPrev[0].addEventListener("click", handleAddDarkTheme);
-  //   swiperBtnNext[0].addEventListener("click", handleAddDarkTheme);
-  // });
 
   return (
     <header className="header" id="header">
